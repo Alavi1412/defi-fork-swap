@@ -9,8 +9,8 @@ module.exports = async function (deployer, network, addresses) {
     token1Address = '';
     token2Address = '';
   } else {
-    await deployer.deploy(Apple, 10000000000000000000000);
-    await deployer.deploy(Pear, 10000000000000000000000);
+    await deployer.deploy(Apple, 10000);
+    await deployer.deploy(Pear, 10000);
     const apple = await Apple.deployed();
     const pear = await Pear.deployed();
     appleAddress = apple.address;
